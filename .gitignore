@@ -1,0 +1,12 @@
+node_modules
+.idea
+*.iml
+npm-debug.log
+dist
+shots
+.DS_Store
+/.env
+/reports/
+yarn-error.log
+yarn.lock
+dev.js
