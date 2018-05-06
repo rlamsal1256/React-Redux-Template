@@ -1,7 +1,7 @@
 {
-  "name": "esales-home-prototype",
+  "name": "react-redux-template",
   "version": "1.0.0",
-  "description": "Home Prototype",
+  "description": "React Redux Template",
   "main": "index.js",
   "scripts": {
     "clean": "rimraf dist",
