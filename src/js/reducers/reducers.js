@@ -1,6 +1,8 @@
 import { combineReducers } from 'redux';
-import templateReducer from './templateReducer';
+import pointsReducer from './pointsReducer';
+import tableReducer from './tableReducer';
 
 export default combineReducers({
-    templateReducer
+    pointsReducer,
+    tableReducer
 });

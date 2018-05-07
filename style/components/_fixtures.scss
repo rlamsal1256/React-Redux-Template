@@ -1,0 +1,47 @@
+.fixture-card {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f1f1f1;
+  margin-bottom: 20px;
+  padding: 40px 10px;
+  border-radius: 7px;
+  text-align: center;
+  align-items: center;
+}
+
+.fixture-card-home-team {
+  flex: 0 0 100px;
+}
+
+.fixture-card-home-team-goals {
+  flex: 0 0 50px;
+}
+
+.fixture-card-divider {
+  flex: 0 0 20px;
+}
+
+.fixture-card-away-team-goals {
+  flex: 0 0 50px;
+}
+
+.fixture-card-away-team {
+  flex: 0 0 100px;
+}
+
+.fixtures-container {
+  flex-grow: 2;
+  //text-align: center;
+  margin: 0 auto;
+}
+
+.fixtures {
+  margin: 0 20px;
+}
+
+.input-goal {
+  max-width: 32px;
+  padding: 10px;
+}
+
+

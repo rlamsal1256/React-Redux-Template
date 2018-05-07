@@ -1,18 +1,19 @@
 import React from 'react';
-import {BrowserRouter as Router, Route, Switch, Redirect} from 'react-router-dom';
-import MainContainer from "./main/MainContainer";
+import TableContainer from "./table/TableContainer";
+import FixturesContainer from "./fixtures/FixturesContainer";
 
 class App extends React.Component {
     render() {
         return (
-            <Router>
-                <Switch>
-                    <Route exact path="/" render={() => (
-                        <Redirect to="/main"/>
-                    )}/>
-                    <Route path='/main' component={MainContainer}/>
-                </Switch>
-            </Router>
+            <div className={'app-container'}>
+                <h2 className={'header'}>
+                    Predict Results for Top 4 Race
+                </h2>
+                <div className={' flex-container'}>
+                    <FixturesContainer/>
+                    <TableContainer/>
+                </div>
+            </div>
         );
     }
 }

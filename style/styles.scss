@@ -2,4 +2,6 @@
 //  Styles.scss -
 // ===================================================================
 //Components Styles
-@import "components/template"
+@import "components/base",
+"components/table",
+"components/fixtures";

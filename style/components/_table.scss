@@ -1,0 +1,38 @@
+th {
+  text-align: center;
+}
+
+td {
+  text-align: right;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table, td, th {
+  border: 1px solid #ddd;
+}
+
+th, td {
+  padding: 15px;
+}
+
+.table-container {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.table {
+  max-width: 400px;
+  display: inline-block;
+}
+
+.table-btn-container {
+  margin: 20px;
+}
+
+.table-btn {
+  padding: 10px;
+}
