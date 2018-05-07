@@ -1,7 +1,7 @@
 {
-  "name": "react-redux-template",
+  "name": "top-4-race",
   "version": "1.0.0",
-  "description": "React Redux Template",
+  "description": "Top 4 Race",
   "main": "index.js",
   "scripts": {
     "clean": "rimraf dist",
