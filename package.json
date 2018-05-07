@@ -10,7 +10,8 @@
     "dist:dev": "npm run clean && webpack --config webpack.config.dev.js --hide-modules",
     "start": "node scripts/startServer.js",
     "start:dev": "./node_modules/.bin/nodemon --watch server --exec npm start",
-    "test": "jest"
+    "test": "jest",
+    "postinstall": "npm run dist"
   },
   "author": "",
   "license": "ISC",
