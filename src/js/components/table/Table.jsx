@@ -3,10 +3,7 @@ import React from 'react';
 export default class Table extends React.Component {
 
     updateTable() {
-        const {points} = this.props;
-        Object.keys(points).forEach(key => {
-            this.props.updateTable(points[key].team, points[key].points, points[key].goalDifference);
-        });
+        this.props.updateTable(this.props.points);
     }
 
     resetTable() {
@@ -16,13 +13,15 @@ export default class Table extends React.Component {
     render() {
         const sortedTable = [];
         for (const key in this.props.table) {
-            const team = this.props.table[key];
-            sortedTable.push({
-                name: team.name,
-                matchesPlayed: team.matchesPlayed,
-                goalDifference: team.goalDifference,
-                points: team.points
-            });
+            if (this.props.table.hasOwnProperty(key)){
+                const team = this.props.table[key];
+                sortedTable.push({
+                    name: team.name,
+                    matchesPlayed: team.matchesPlayed,
+                    goalDifference: team.goalDifference,
+                    points: team.points
+                });
+            }
         }
 
         sortedTable.sort((team1, team2) => {

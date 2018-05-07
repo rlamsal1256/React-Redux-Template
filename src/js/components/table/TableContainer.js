@@ -1,5 +1,4 @@
 import {connect} from "react-redux";
-import {bindActionCreators} from "redux";
 import Table from './Table'
 import {resetTable, updateTable} from '../../actions/updateTableAction'
 
@@ -11,10 +10,10 @@ const mapStateToProps = state => {
 };
 
 const mapDispatchToProps = dispatch => {
-    return bindActionCreators({
-        updateTable: updateTable,
-        resetTable: resetTable
-    }, dispatch);
+    return {
+        updateTable: (points) => dispatch(updateTable(points)),
+        resetTable: () => dispatch(resetTable())
+    }
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(Table)
