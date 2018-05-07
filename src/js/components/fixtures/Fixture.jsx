@@ -55,9 +55,13 @@ export default class Fixture extends React.Component{
     }
 
     render() {
+        const {homeTeam, awayTeam} = this.props.fixture;
         return (
             <div className={'fixture-card'} >
-                <div className={'fixture-card-home-team'}>{this.props.fixture.homeTeam}</div>
+                <div className={'fixture-card-home-team flex-container-column'}>
+                    <div><img src={require(`../../../assets/${homeTeam}-logo.png`)} /></div>
+                    <div>{homeTeam}</div>
+                </div>
                 <input className={'fixture-card-home-team-goals input-goal'}
                        value={this.state.homeTeamGoals}
                        onChange={(e) => this.handleHomeTeamGoalsChange(e)}
@@ -67,7 +71,10 @@ export default class Fixture extends React.Component{
                        value={this.state.awayTeamGoals}
                        onChange={(e) => this.handleAwayTeamGoalsChange(e)}
                 />
-                <div className={'fixture-card-away-team'}>{this.props.fixture.awayTeam}</div>
+                <div className={'fixture-card-away-team flex-container-column'}>
+                    <div><img src={require(`../../../assets/${awayTeam}-logo.png`)} /></div>
+                    <div>{awayTeam}</div>
+                </div>
             </div>
         )
     }
