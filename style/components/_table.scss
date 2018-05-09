@@ -36,3 +36,26 @@ th, td {
 .table-btn {
   padding: 10px;
 }
+
+.no-shift {
+  background: #A9A9A9;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+
+.up-shift {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #32CD32;
+}
+
+.down-shift {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #f00;
+}
